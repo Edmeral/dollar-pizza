@@ -59,6 +59,7 @@ posts.forEach(function(post) {
 
   var adressLink = document.createElement('a')
   adressLink.setAttribute('href', post.gMapsLocation.url)
+  adressLink.innerHTML = 'Open in Gmaps'
 
   paragraph.appendChild(adressLink)
 
