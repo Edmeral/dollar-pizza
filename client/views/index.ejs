@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>$ pizza</title>
+ 
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div id="map"></div>
+  
+    <div id="places">
+    <%
+      for (var i = 0; i < posts.length; i++) { %>
+        <div class="card" pizza-id="<%= posts[i]._id %>">
+        <a href="https://www.instagram.com/p/<%= posts[i]._id %>">
+          <img class="img-pizza" src="<%= posts[i].media %>" alt="">
+        </a>
+        <p class='pizza-description'>
+          <strong><%= posts[i].gMapsLocation.name %></strong> <br>
+          Score: <%= posts[i].score %> <br>
+          🧀: <%= posts[i].cheese %> 🍝: <%= posts[i].sauce %> 🍕: <%= posts[i].crust %> <br>
+          <%= posts[i].gMapsLocation.adress %> <br>
+          <a href="<%= posts[i].gMapsLocation.url %>">Open in Gmaps</a>
+        </p>
+      </div>
+      <%
+      }
+    %>
+    </div>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="/js/gmaps.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>

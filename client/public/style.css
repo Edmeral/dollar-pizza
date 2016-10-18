@@ -1,0 +1,50 @@
+
+body {
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+  font-size: 14px;
+  color: #33333;
+}
+.card {
+  background-color: #f7f7f7;
+  height: 150px;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.selected {
+  background-color: #bdc3c7;
+}
+
+.img-pizza {
+  margin-right: 10px;
+  float: left;
+  height: 150px;
+  width: auto;
+}
+
+#map {
+  width: 600px;
+  height: 600px;
+  display: inline-block;
+}
+
+.pizza-description {
+  padding-top: 0;
+  margin-top: 0;
+/*  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);*/
+}
+
+#places {
+  height: 600px;
+  width: 400px;
+  overflow: auto;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.container {
+  width: 1010px;
+  margin: auto;
+  margin-top: 40px;
+}
