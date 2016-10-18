@@ -53,7 +53,7 @@ posts.forEach(function(post) {
   var paragraph = document.createElement('p')
   paragraph.className = 'pizza-description'
   paragraph.innerHTML = '<strong>' + post.gMapsLocation.name + '</strong> <br>' +
-    'Score:' + post.score + '<br>' +
+    'Score: ' + post.score + '<br>' +
     '🧀: ' + post.cheese + ' 🍝: ' + post.sauce +' 🍕: ' + post.crust + '<br>' +
     post.gMapsLocation.adress + '<br>'
 
