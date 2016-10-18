@@ -20,7 +20,7 @@ posts.forEach(function(post) {
     lat: post.gMapsLocation.lat,
     lng: post.gMapsLocation.lng,
     title: post.gMapsLocation.name,
-    icon: 'http://findicons.com/files/icons/1449/more_kidcons/32/slice_of_pizza.png',
+    icon: 'slice.png',
     infoWindow: {
       content: '<p>' + post.gMapsLocation.name  +
         '<br> Score: ' + post.score + '<br>' +
