@@ -91,7 +91,7 @@ postsStream.on('data', post => {
 
         })
       })
-    }) // callback hell !!
+    })
   }
 })
 
