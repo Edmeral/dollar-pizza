@@ -41,4 +41,4 @@ $ node scrape.js
 ```
 Running this command will fill up the pizza database with information to every $1 pizza place featured on the Instagram account!
 
-and then I wrote a little script to export all the [data](https://github.com/Edmeral/dollar-pizza/blob/gh-pages/js/posts.js) from the database to JSON object which is used for the [website](http://pizza.aissam.me) available at the [gh-pages](https://github.com/Edmeral/dollar-pizza/tree/gh-pages) branch.
+And then I wrote a little script to export all the [data](https://github.com/Edmeral/dollar-pizza/blob/gh-pages/js/posts.js) from the database to a JSON object which is used for the [website](http://pizza.aissam.me) available at the [gh-pages](https://github.com/Edmeral/dollar-pizza/tree/gh-pages) branch.
