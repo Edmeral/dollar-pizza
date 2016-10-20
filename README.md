@@ -14,7 +14,7 @@
 
 ---
 
-This [guy](https://www.instagram.com/dollarpizzaslicenyc/) is running around NYC trying every $1 pizza slice and documents his journey on his Instagram account, he gives scores from 1 to 5 to cheese, sauce and crust, I wanted to know what is the best pizza slice out there based on the scores but it turns out it's a tricky question.
+This [guy](https://www.instagram.com/dollarpizzaslicenyc/) is running around NYC trying every $1 pizza slice and documents his journey on his Instagram account, he gives scores from 1 to 5 to cheese, sauce and crust, I wanted to know what is the best pizza slice out there based on these scores but it turns out it's a tricky question.
 
 There is no way to find out the best slice from the Instagram page only (unless you're willing to manually read every photo description), we need a way to automate this task!
 
