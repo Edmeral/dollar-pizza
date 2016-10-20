@@ -1,0 +1,32 @@
+{
+  "name": "dollar-pizza",
+  "version": "1.0.0",
+  "description": "Finding out the best $1 pizza slice in NYC.",
+  "main": "scrape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edmeral/dollar-pizza.git"
+  },
+  "keywords": [
+    "pizza",
+    "scraping",
+    "image",
+    "recognition"
+  ],
+  "author": "Aissam Belhachmi <edmeral.aissam@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Edmeral/dollar-pizza/issues"
+  },
+  "homepage": "https://github.com/Edmeral/dollar-pizza#readme",
+  "dependencies": {
+    "@google-cloud/vision": "^0.4.0",
+    "dotenv": "^2.0.0",
+    "instagram-screen-scrape": "^2.0.0",
+    "mongoose": "^4.6.4",
+    "request": "^2.75.0"
+  }
+}
