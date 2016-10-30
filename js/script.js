@@ -36,6 +36,7 @@ posts.forEach(function(post) {
   Constructing the sidebar
  */
 posts.forEach(function(post) {
+
   var cardDiv = document.createElement('div')
   cardDiv.className = 'card'
   cardDiv.setAttribute('pizza-id', post._id)
@@ -45,7 +46,6 @@ posts.forEach(function(post) {
 
   var pizzPic = document.createElement('img')
   pizzPic.className = 'img-pizza'
-  pizzPic.setAttribute('src', 'images/' + post['_id'] + '-small.jpg')
 
   link.appendChild(pizzPic)
   cardDiv.appendChild(link)
@@ -66,7 +66,25 @@ posts.forEach(function(post) {
   cardDiv.appendChild(paragraph)
 
   document.querySelector('#places').appendChild(cardDiv)
+
+  var preload = 1000; // load some pictures ahead of time
+
+  var loadPicture = function() {
+    if (pizzPic.getBoundingClientRect().top < preload) {
+      pizzPic.setAttribute('src', 'images/' + post['_id'] + '-small.jpg');
+      return true;
+    }
+    return false;
+  };
+
+  if (!loadPicture()) {
+    document.getElementById('places').addEventListener('scroll', loadPicture);
+  }
+
 })
+
+
+
 
 function zoomToMarkerId(map, markers, markerId) {
   map.setCenter(markers[markerId].getPosition().lat(), markers[markerId].getPosition().lng())
