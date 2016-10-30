@@ -45,7 +45,7 @@ posts.forEach(function(post) {
 
   var pizzPic = document.createElement('img')
   pizzPic.className = 'img-pizza'
-  pizzPic.setAttribute('src', post.media)
+  pizzPic.setAttribute('src', 'images/' + post['_id'] + '-small.jpg')
 
   link.appendChild(pizzPic)
   cardDiv.appendChild(link)
